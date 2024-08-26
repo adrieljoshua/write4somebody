@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import SearchBox from './components/SearchBox'
 import Card from './components/Card'
+import CardGrid from './components/CardGrid'
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col items-center h-screen">
         <div className='flex flex-col items-center justify-center h-screen'>
           <div className='text-center text-6xl mt-20 font-royal text-primary-light '>
             Write 4 Somebody        
@@ -17,10 +18,10 @@ function App() {
           Leave messages for people, strangers or loved ones to read (or) find what people have left for you...  
           </div>
           <SearchBox />
-        </div >
-        <div className='flex'>
-          <Card />
+          
         </div>
+        <CardGrid />
+        
 
       </div>
     </>
