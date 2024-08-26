@@ -26,7 +26,7 @@ export default {
         },
         secondary:{
           DEFAULT: '#0C0F1C',
-        }
+        },
       },
     },
   },
