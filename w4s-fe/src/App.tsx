@@ -5,7 +5,7 @@ import CardGrid from './components/CardGrid'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [searchValue, setSearchValue] = useState('');
 
   return (
     <>
@@ -17,10 +17,10 @@ function App() {
           <div className='text-center text-2xl mt-20 font-royal text-primary-dark'>
           Leave messages for people, strangers or loved ones to read (or) find what people have left for you...  
           </div>
-          <SearchBox />
+          <SearchBox setSearchValue={setSearchValue} />
           
         </div>
-        <CardGrid />
+        <CardGrid searchValue={searchValue} />
         
 
       </div>
